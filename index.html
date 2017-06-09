@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>xDevel - Animation Logo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color:#000;
+            }
+            #demo {
+                width: 692px;
+                height: 60px;
+                background-color: #333;
+                padding: 8px;
+            }
+            #logo {
+                position: relative;
+                width: 60px;
+                height: 60px;
+                background: url(https://images.vexels.com/media/users/3/139341/isolated/preview/0330bb785c609837f41e8d9b2208ba74-2d-quadrado-by-vexels.png) no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo">
+            <div id="logo"></div>
+        </div>
+
+        <!--- The following scripts are necessary to do TweenLite tweens on CSS properties -->
+        <script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+        <script type="text/javascript" src="js/greensock/TweenLite.min.js"></script>
+
+    <script>
+        window.onload = function(){
+            var logo = document.getElementById("logo");
+                TweenLite.to(logo, 1, {left:"632px"});
+        }
+    </script>
+    </body>
+</html>
